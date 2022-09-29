@@ -1,0 +1,33 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net6.0-windows</TargetFramework>
+    <RootNamespace>WpfApp1_test</RootNamespace>
+    <Nullable>enable</Nullable>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="sprites\custom_gui3\game\gui\button\options_hover.png" />
+    <None Remove="sprites\custom_gui3\game\gui\button\options_idle.png" />
+    <None Remove="sprites\custom_gui3\game\gui\button\quit_hover.png" />
+    <None Remove="sprites\custom_gui3\game\gui\button\quit_idle.png" />
+    <None Remove="sprites\custom_gui3\game\gui\button\start_hover.png" />
+    <None Remove="sprites\Custom_GUI3\game\gui\button\start_idle.png" />
+    <None Remove="sprites\custom_gui3\game\gui\main_menu.png" />
+    <None Remove="start-button-hi.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="sprites\custom_gui3\game\gui\button\options_hover.png" />
+    <Resource Include="sprites\custom_gui3\game\gui\button\options_idle.png" />
+    <Resource Include="sprites\custom_gui3\game\gui\button\quit_hover.png" />
+    <Resource Include="sprites\custom_gui3\game\gui\button\quit_idle.png" />
+    <Resource Include="sprites\custom_gui3\game\gui\button\start_hover.png" />
+    <Resource Include="sprites\Custom_GUI3\game\gui\button\start_idle.png" />
+    <Resource Include="sprites\custom_gui3\game\gui\main_menu.png" />
+    <Resource Include="start-button-hi.png" />
+  </ItemGroup>
+
+</Project>

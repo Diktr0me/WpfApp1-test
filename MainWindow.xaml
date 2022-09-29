@@ -1,0 +1,95 @@
+﻿<Window x:Class="WpfApp1_test.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp1_test"
+        mc:Ignorable="d"
+        Title="Test-mainmenu"  WindowState="Maximized" WindowStyle="None">
+
+    <Grid>
+        <Grid.RenderTransform>
+            <TransformGroup>
+                <ScaleTransform/>
+                <SkewTransform/>
+                <RotateTransform Angle="-0.052"/>
+                <TranslateTransform/>
+            </TransformGroup>
+        </Grid.RenderTransform>
+        <Button  x:Name="bstart" Grid.Row="1" Grid.Column="1" Click="bstart_Click" >
+            <Button.Style>
+                <Style TargetType="{x:Type Button}">
+                    <Setter Property="Template">
+                        <Setter.Value>
+                            <ControlTemplate TargetType="{x:Type Button}">
+                                <Border BorderBrush="Transparent" BorderThickness="1" CornerRadius="5" Background="Transparent" >
+                                    <Image x:Name="img" Source="/sprites/Custom_GUI3/game/gui/button/start_idle.png"/>
+                                </Border>
+                                <ControlTemplate.Triggers>
+                                    <Trigger Property="IsMouseOver" Value="True">
+                                        <Setter TargetName="img" Property="Source" Value="/sprites/Custom_GUI3/game/gui/button/start_hover.png" />
+                                    </Trigger>
+                                </ControlTemplate.Triggers>
+                            </ControlTemplate>
+                        </Setter.Value>
+                    </Setter>
+                </Style>
+            </Button.Style>
+        </Button>
+        <Button x:Name="bleaderboard" Grid.Row="2" Grid.Column="1">
+            <Button.Style>
+                <Style TargetType="{x:Type Button}">
+                    <Setter Property="Template">
+                        <Setter.Value>
+                            <ControlTemplate TargetType="{x:Type Button}">
+                                <Border BorderBrush="Transparent" BorderThickness="1" CornerRadius="5" Background="Transparent" Padding="100,0,0,0">
+                                    <Image x:Name="img" HorizontalAlignment="Center" Source="/sprites/Custom_GUI3/game/gui/button/options_idle.png" Stretch="Uniform"/>
+                                </Border>
+                                <ControlTemplate.Triggers>
+                                    <Trigger Property="IsMouseOver" Value="True">
+                                        <Setter TargetName="img" Property="Source" Value="/sprites/Custom_GUI3/game/gui/button/options_hover.png" />
+                                    </Trigger>
+                                </ControlTemplate.Triggers>
+                            </ControlTemplate>
+                        </Setter.Value>
+                    </Setter>
+                </Style>
+            </Button.Style>
+        </Button>
+        <Button x:Name="bquit" Click="Cquit" Grid.Row="3" Grid.Column="1">
+            <Button.Style>
+                <Style TargetType="{x:Type Button}">
+                    <Setter Property="Template">
+                        <Setter.Value>
+                            <ControlTemplate TargetType="{x:Type Button}">
+                                <Border BorderBrush="Transparent" BorderThickness="1" CornerRadius="5" Background="Transparent" Padding="100,0,0,0" >
+                                    <Image x:Name="img" Source="/sprites/Custom_GUI3/game/gui/button/quit_idle.png"/>
+                                </Border>
+                                <ControlTemplate.Triggers>
+                                    <Trigger Property="IsMouseOver" Value="True">
+                                        <Setter TargetName="img" Property="Source" Value="/sprites/Custom_GUI3/game/gui/button/quit_hover.png" />
+                                    </Trigger>
+                                </ControlTemplate.Triggers>
+                            </ControlTemplate>
+                        </Setter.Value>
+                    </Setter>
+                </Style>
+            </Button.Style>
+        </Button>
+        <Grid.Background>
+            <ImageBrush Stretch="Fill" ImageSource="/sprites/custom_gui3/game/gui/main_menu.png" AlignmentY="Top" AlignmentX="Center" />
+        </Grid.Background>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="0,05*"/>
+            <RowDefinition Height="0,05*"/>
+            <RowDefinition Height="0,05*"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="0,40*"/>
+            <ColumnDefinition Width="0,20*"/>
+            <ColumnDefinition Width="0,40*"/>
+        </Grid.ColumnDefinitions>
+    </Grid>
+</Window>

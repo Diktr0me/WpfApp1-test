@@ -1,0 +1,10 @@
+﻿I'm sorry, but errors were detected in your script. Please correct the
+errors listed below, and try again.
+
+
+File "game/screens.rpy", line 927: Line is indented, but the preceding predict statement does not expect a block. Please check this line's indentation.
+    style_prefix "history"
+    ^
+
+Ren'Py Version: Ren'Py 7.4.2.1292
+Fri Apr 23 10:04:58 2021

@@ -1,0 +1,74 @@
+﻿I'm sorry, but an uncaught exception occurred.
+
+While running game code:
+  File "renpy/common/00gamemenu.rpy", line 173, in script
+    $ ui.interact()
+  File "renpy/common/00gamemenu.rpy", line 173, in <module>
+    $ ui.interact()
+  File "game/screens.rpy", line 920, in execute
+    screen history():
+  File "game/screens.rpy", line 920, in execute
+    screen history():
+  File "game/screens.rpy", line 927, in execute
+    use game_menu(_("History"), scroll=("vpgrid" if gui.history_height else "viewport"), yinitial=1.0):
+  File "game/screens.rpy", line 438, in execute
+    screen game_menu(title, scroll=None, yinitial=0.0):
+  File "game/screens.rpy", line 438, in execute
+    screen game_menu(title, scroll=None, yinitial=0.0):
+  File "game/screens.rpy", line 442, in execute
+    if tittle != "History":
+  File "game/screens.rpy", line 442, in <module>
+    if tittle != "History":
+NameError: name 'tittle' is not defined
+
+-- Full Traceback ------------------------------------------------------------
+
+Full traceback:
+  File "renpy/common/00gamemenu.rpy", line 173, in script
+    $ ui.interact()
+  File "C:\Users\barnh\Desktop\renpy-7.3.5-sdk.7z\renpy-7.3.5-sdk/renpy/ast.py", line 922, in execute
+    renpy.python.py_exec_bytecode(self.code.bytecode, self.hide, store=self.store)
+  File "C:\Users\barnh\Desktop\renpy-7.3.5-sdk.7z\renpy-7.3.5-sdk/renpy/python.py", line 2218, in py_exec_bytecode
+    exec(bytecode, globals, locals)
+  File "renpy/common/00gamemenu.rpy", line 173, in <module>
+    $ ui.interact()
+  File "C:\Users\barnh\Desktop\renpy-7.3.5-sdk.7z\renpy-7.3.5-sdk/renpy/ui.py", line 298, in interact
+    rv = renpy.game.interface.interact(roll_forward=roll_forward, **kwargs)
+  File "C:\Users\barnh\Desktop\renpy-7.3.5-sdk.7z\renpy-7.3.5-sdk/renpy/display/core.py", line 3007, in interact
+    repeat, rv = self.interact_core(preloads=preloads, trans_pause=trans_pause, pause=pause, pause_start=pause_start, **kwargs)
+  File "C:\Users\barnh\Desktop\renpy-7.3.5-sdk.7z\renpy-7.3.5-sdk/renpy/display/core.py", line 3418, in interact_core
+    root_widget.visit_all(lambda i : i.per_interact())
+  File "C:\Users\barnh\Desktop\renpy-7.3.5-sdk.7z\renpy-7.3.5-sdk/renpy/display/core.py", line 566, in visit_all
+    d.visit_all(callback, seen)
+  File "C:\Users\barnh\Desktop\renpy-7.3.5-sdk.7z\renpy-7.3.5-sdk/renpy/display/core.py", line 566, in visit_all
+    d.visit_all(callback, seen)
+  File "C:\Users\barnh\Desktop\renpy-7.3.5-sdk.7z\renpy-7.3.5-sdk/renpy/display/core.py", line 566, in visit_all
+    d.visit_all(callback, seen)
+  File "C:\Users\barnh\Desktop\renpy-7.3.5-sdk.7z\renpy-7.3.5-sdk/renpy/display/screen.py", line 432, in visit_all
+    callback(self)
+  File "C:\Users\barnh\Desktop\renpy-7.3.5-sdk.7z\renpy-7.3.5-sdk/renpy/display/core.py", line 3418, in <lambda>
+    root_widget.visit_all(lambda i : i.per_interact())
+  File "C:\Users\barnh\Desktop\renpy-7.3.5-sdk.7z\renpy-7.3.5-sdk/renpy/display/screen.py", line 443, in per_interact
+    self.update()
+  File "C:\Users\barnh\Desktop\renpy-7.3.5-sdk.7z\renpy-7.3.5-sdk/renpy/display/screen.py", line 631, in update
+    self.screen.function(**self.scope)
+  File "game/screens.rpy", line 920, in execute
+    screen history():
+  File "game/screens.rpy", line 920, in execute
+    screen history():
+  File "game/screens.rpy", line 927, in execute
+    use game_menu(_("History"), scroll=("vpgrid" if gui.history_height else "viewport"), yinitial=1.0):
+  File "game/screens.rpy", line 438, in execute
+    screen game_menu(title, scroll=None, yinitial=0.0):
+  File "game/screens.rpy", line 438, in execute
+    screen game_menu(title, scroll=None, yinitial=0.0):
+  File "game/screens.rpy", line 442, in execute
+    if tittle != "History":
+  File "game/screens.rpy", line 442, in <module>
+    if tittle != "History":
+NameError: name 'tittle' is not defined
+
+Windows-10-10.0.19041
+Ren'Py 7.4.2.1292
+Custom GUI 3 1.0
+Fri Apr 23 10:06:18 2021
